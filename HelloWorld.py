@@ -1,3 +1,3 @@
 print("Hello World!")
 
-print("Git is complicate")
+print("Git is complicated")
