@@ -4,21 +4,20 @@
 class patient:
     def __init__(self,name):
         self.name = name
+
+class physician:
+    # give examination (15-20 mins)
+    def examination(self):
+        pass
                  
 class nurse:
-    pass
+    def __init__(self, nurse1):
+        pass
     # gets patient from waiting room
     def getPatient(self):
         pass
     # send to 2nd waiting room queue
     def sendPatient(self):
-        pass
-
-
-class physician:
-    pass
-    # give examination (15-20 mins)
-    def examination(self):
         pass
 
 
@@ -43,12 +42,13 @@ class examRoom:
         self.roomTime = 0
         self.patient = None
 
-    def addPatients3(self,waitingRoom):
-        pass
+    def addPatients4(self,waitingRoom):
+        self.physician.append(waitingRoom)
 
-    def removePatients3(self):
-        pass
+    def removePatients4(self):
+        return physician.pop(0)
     #assign physician for exam rooms
+        
     #add/remove patient
     #keep track how long the patient has been in the room
     def timeSpentInRoom(self):
@@ -68,6 +68,7 @@ while True:
     e4 = examRoom()
     e5 = examRoom()
     e6 = examRoom()
+
 
     
     
