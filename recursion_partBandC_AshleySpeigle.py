@@ -12,12 +12,12 @@ def dynamicFib(n):
         if n <= 1:
             k.append(n)
             i = k.index(n)
-            v.append(i)
+            v.append(1)
             return v[i]
 
         else:
-            k.append(n)
             v.append(dynamicFib(n - 1)+dynamicFib(n - 2))
+            k.append(n)
             i = k.index(n)
             return v[i]
 #recursion
