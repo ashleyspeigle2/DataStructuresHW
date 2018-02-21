@@ -1,25 +1,37 @@
 import time
 
 #recursive Part B and C
-k = []
-v = []
-def dynamicFib(n):
-    if n in k:
-        i = k.index(n)
-        return v[i]
+n = 500
+key = [1,1]
+for i in range(n):
+    key.append(0)
+    
+def dynamicFib(x):
+    if key[x] == 0:
+        key[x] = dynamicFib(x-1) + dynamicFib(x-2)
+        
+    return key[x]
 
-    else:
-        if n <= 1:
-            k.append(n)
-            i = k.index(n)
-            v.append(1)
-            return v[i]
-
-        else:
-            v.append(dynamicFib(n - 1)+dynamicFib(n - 2))
-            k.append(n)
-            i = k.index(n)
-            return v[i]
+print(dynamicFib(n))
+##k = []
+##v = []
+##def dynamicFib(n):
+##    if n in k:
+##        i = k.index(n)
+##        return v[i]
+##
+##    else:
+##        if n <= 1:
+##            k.append(n)
+##            i = k.index(n)
+##            v.append(1)
+##            return v[i]
+##
+##        else:
+##            v.append(dynamicFib(n - 1)+dynamicFib(n - 2))
+##            k.append(n)
+##            i = k.index(n)
+##            return v[i]
 #recursion
 def fib(n):
     if (n < 1):
