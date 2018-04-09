@@ -1,7 +1,8 @@
 #Sudoku Game: Ashley & Becky
 # https://docs.python.org/3/library/tkinter.html
 # http://mcsp.wartburg.edu/zelle/python/graphics/graphics.pdf
-
+#click then fill in squares
+#import pygame
 from graphics import *
 import graphics
 import tkinter
@@ -13,6 +14,8 @@ win = graphics.GraphWin("Sudoku", 800, 800)
 
 #base square
 rect = Rectangle(Point(50,50),Point(500,500))
+rect.setWidth(4)
+rect.setFill('white')
 rect.draw(win)
 
 #hint box
@@ -92,23 +95,23 @@ drawIn.draw(win)
 #yellow blocks
 r1 = Rectangle(Point(50,50),Point(200,200))
 r1.draw(win)
-r1.setFill('yellow')
+#r1.setFill('yellow')
 
 r2 = Rectangle(Point(350,50),Point(500,200))
 r2.draw(win)
-r2.setFill('yellow')
+#r2.setFill('yellow')
 
 r3 = Rectangle(Point(200,200),Point(350,350))
 r3.draw(win)
-r3.setFill('yellow')
+#r3.setFill('yellow')
 
 r4= Rectangle(Point(50,500),Point(200,350))
 r4.draw(win)
-r4.setFill('yellow')
+#r4.setFill('yellow')
 
 r5 = Rectangle(Point(500,500),Point(350,350))
 r5.draw(win)
-r5.setFill('yellow')
+#r5.setFill('yellow')
 
 
 #vertical points
@@ -169,6 +172,7 @@ line2 = Line(p3, p4)
 line2.draw(win)
 
 line3 = Line(p5, p6)
+line3.setWidth(3)
 line3.draw(win)
 
 line4 = Line(p7, p8)
@@ -178,6 +182,7 @@ line5 = Line(p9, p10)
 line5.draw(win)
 
 line6 = Line(p11, p12)
+line6.setWidth(3)
 line6.draw(win)
 
 line7 = Line(p13, p14)
@@ -194,6 +199,7 @@ line10 = Line(p19, p20)
 line10.draw(win)
 
 line11 = Line(p21, p22)
+line11.setWidth(3)
 line11.draw(win)
 
 line12 = Line(p23, p24)
@@ -203,6 +209,7 @@ line13 = Line(p25, p26)
 line13.draw(win)
 
 line14 = Line(p27, p28)
+line14.setWidth(3)
 line14.draw(win)
 
 line15 = Line(p29, p30)
