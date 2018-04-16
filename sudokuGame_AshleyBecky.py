@@ -2,7 +2,7 @@
 # https://docs.python.org/3/library/tkinter.html
 # http://mcsp.wartburg.edu/zelle/python/graphics/graphics.pdf
 #click then fill in squares
-#import pygame
+from pygame import *
 from graphics import *
 import graphics
 import tkinter
