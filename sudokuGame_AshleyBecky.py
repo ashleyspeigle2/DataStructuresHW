@@ -1,14 +1,35 @@
 #Sudoku Game: Ashley & Becky
-# https://docs.python.org/3/library/tkinter.html
+#http://programarcadegames.com/index.php?chapter=introduction_to_graphics
 # http://mcsp.wartburg.edu/zelle/python/graphics/graphics.pdf
 #click then fill in squares
-from pygame import *
 from graphics import *
 import graphics
 import tkinter
+import pygame, sys
+
+##pygame.init()
 
 win = graphics.GraphWin("Sudoku", 800, 800)
 
+##def game_intro():
+##    intro = True
+##
+##    while intro:
+##        for event in pygame.event.get():
+##            if event.type == pygame.QUIT:
+##                pygame.quit()
+##                quit()
+##
+##        gameDisplay.fill(white)
+##        largeText = pygame.font.Font('freesansbold.ttf',115)
+##        TextSurf, TextRect = text_objects("Sudoku", largeText)
+##        TextRect.center = ((display_width/2),(display_height/2))
+##        gameDisplay.blit(TextSurf, TextRect)
+##        pygame.display.update()
+##        clock.tick(15)
+
+##game_intro()
+                
 #image
 ##yellowJ = Image(Point(750,50),"GracelandYellowjacketsLogo.png")
 
@@ -217,5 +238,4 @@ line15.draw(win)
 
 line16 = Line(p31, p32)
 line16.draw(win)
-
 
