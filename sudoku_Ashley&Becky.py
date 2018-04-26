@@ -217,7 +217,7 @@ box26 = box("box",425,175,"6")
 box27 = box("box",475,175,"7")
 
 #row4
-box28 = text("num",175,225,2)
+box28 = text("num",75,225,2)
 box29 = box("box",125,225,"1")
 box30 = box("box",175,225,"9")
 box31 = text("num",225,225,2)
@@ -273,7 +273,7 @@ box72 = box("box",475,425,"4")
 
 #row9
 box73 = box("box",75,475,"3")
-box74 = text("num",125,75,2)
+box74 = text("num",125,475,2)
 box75 = text("num",175,475,2)
 box76 = text("num",225,475,2)
 box77 = text("num",275,475,2)
